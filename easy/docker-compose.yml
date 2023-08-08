@@ -1,0 +1,9 @@
+services:
+  bitcoin-regtest-easy:
+    image: ruimarinho/bitcoin-core:24-alpine
+    command:
+      -printtoconsole=1 
+      -regtest=1
+      -rpcauth=user:2845764e7dab3eeb4806199508faecb8$6ef0d19e601aa23caa88abafd1013f5374659d1c99acb13865b80f8844f2604b 
+      -fallbackfee=0.0002
+      -server=1
